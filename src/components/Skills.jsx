@@ -3,7 +3,7 @@ import React from "react";
 import html from "../assets/HTML5.png";
 import css from "../assets/css.png";
 import javascript from "../assets/JavaScript.png";
-import react from "../assets/react.png";
+import react from "../assets/React.png";
 import nextjs from "../assets/Next.js.png";
 import nodejs from "../assets/Node.js.png";
 import mongoDB from "../assets/MongoDB.png";
