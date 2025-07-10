@@ -5,19 +5,23 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
+import CursorFollower from "./components/CursorFollower";
 function App() {
  
 
   return (
     <>
-      <NavBar />
+     
+      <div className="relative">
+      <CursorFollower />
+       <NavBar />
       <SocialLinks/>
       <Home />
       <About />
       <Skills />
       <Portfolio />
-      
       <Contact />
+    </div>
     </>
   )
 }

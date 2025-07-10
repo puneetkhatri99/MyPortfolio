@@ -1,94 +1,31 @@
-import React from "react";
 
 import html from "../assets/HTML5.png";
 import css from "../assets/css.png";
 import javascript from "../assets/JavaScript.png";
 import react from "../assets/react.png";
-import nextjs from "../assets/Next.js.png";
 import nodejs from "../assets/Node.js.png";
 import mongoDB from "../assets/MongoDB.png";
 import tailwind from "../assets/Tailwind.png";
 import express from "../assets/Express.png"
 import TS from "../assets/TypeScript.png"
 import PostgresSQL from "../assets/PostgresSQL.png"
-import Bash from "../assets/Bash.png"
 
 
 const Skills = () => {
   const techs = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: tailwind,
-      title: "Tailwind CSS",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 5,
-      src: react,
-      title: "React",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
-      src: nodejs,
-      title: "Node Js",
-      style: "shadow-green-300",
-    },
-    {
-      id: 7,
-      src: mongoDB,
-      title: "MongoDB",
-      style: "shadow-green-500",
-    },
-    {
-      id: 8,
-      src: express,
-      title: "Express Js",
-      style: "shadow-black",
-    },
-    {
-      id: 9,
-      src: nextjs,
-      title: "Next Js",
-      style: "shadow-black",
-    },
-    {
-      id: 10,
-      src: TS,
-      title: "TypeScript",
-      style: "shadow-blue-700",
-    },
-    {
-      id: 11,
-      src: Bash,
-      title: "BASH",
-      style: "shadow-gray-700",
-    },
-    {
-      id: 12,
-      src:PostgresSQL,
-      title: "PostgresSQL",
-      style: "shadow-blue-800",
-    },
-  ];
+  { id: 1, src: html, title: "HTML", style: "shadow-orange-500" },
+  { id: 2, src: css, title: "CSS", style: "shadow-blue-500" },
+  { id: 3, src: nodejs, title: "Node.js", style: "shadow-green-300" },
+  { id: 4, src: tailwind, title: "Tailwind CSS", style: "shadow-blue-400" },
+  { id: 5, src: react, title: "React", style: "shadow-sky-400" },
+  { id: 6, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
+  { id: 7, src: mongoDB, title: "MongoDB", style: "shadow-green-500" },
+  { id: 8, src: express, title: "Express.js", style: "shadow-gray-700" },
+  { id: 9, src: TS, title: "TypeScript", style: "shadow-blue-700" },
+  { id: 10, src: PostgresSQL, title: "PostgreSQL", style: "shadow-blue-800" },
+  { id: 11, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", title: "Python", style: "shadow-yellow-500" },
+  {id: 13,src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",title: "Java",style: "shadow-red-500",}
+];
 
   return (
     <div

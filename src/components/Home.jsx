@@ -1,11 +1,10 @@
-import React from "react";
 import HeroImage from "../assets/profile.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div
+  <div
       name="home"
       className="h-screen w-full"
     >
@@ -15,7 +14,8 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className=" py-4 max-w-md">
-          Hi there! I’m PUNEET SEHGAL, a passionate and dedicated web developer with a strong ability to quickly learn and adapt to new technologies in the fast-paced world of web development. My curiosity and drive to stay ahead of the curve have allowed me to gain expertise in modern frameworks, tools, and best practices.
+         	I’m Puneet Sehgal, a passion driven full-stack web developer with a strong foundation in the MERN stack and a growing passion for AI and automation. I specialize in building fast, responsive, and user-friendly web applications using modern tools like React, Node.js, and Tailwind CSS.
+
           </p>
 
           <div>
@@ -42,6 +42,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 

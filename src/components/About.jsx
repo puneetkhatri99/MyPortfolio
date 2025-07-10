@@ -14,13 +14,16 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-        I’ve successfully designed and developed several projects ranging from responsive websites to dynamic web applications. These experiences have honed my skills in HTML, CSS, JavaScript, React, Tailwind CSS, and more. I thrive in solving complex problems, building user-friendly interfaces, and creating seamless web experiences.
+        
+	I’m a passionate full-stack web developer with hands-on experience building everything from responsive websites to dynamic, real-time web applications. Specializing in the MERN stack (MongoDB, Express.js, React, Node.js), I enjoy crafting user-friendly interfaces, scalable APIs, and smooth user experiences using technologies like Tailwind CSS, Redux Toolkit, and Socket.IO.
+	What sets me apart is my obsession with learning and improving. 
         </p>
 
         <br />
 
         <p className="text-xl">
-        What sets me apart is my commitment to continuous learning. Whether it’s exploring cutting-edge technologies like Next.js,  Node.js, or improving performance optimization strategies, I’m always eager to enhance my skillset and deliver high-quality solutions.
+          Recently, I’ve been diving into the world of machine learning and large language models, experimenting with tools like Hugging Face Transformers, LangChain, and LLMs like LLaMA. I’m particularly excited about combining my MERN expertise with AI to build smarter, more interactive web experiences.
+	Whether I’m optimizing performance, integrating complex APIs, or exploring the latest ML frameworks, I’m always pushing myself to deliver solutions that are fast, clean, and impactful.
         </p>
       </div>
     </div>
