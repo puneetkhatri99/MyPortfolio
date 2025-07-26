@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(() => {
-    // Check if 'dark' class is on html at mount
+
     return document.documentElement.classList.contains('dark');
   });
 
@@ -18,7 +18,7 @@ export const ThemeToggle = () => {
     }
   };
 
-  // On mount, check localStorage or system preference
+
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import Home from "./components/Home"
 import NavBar from './components/NavBar'
 import CursorFollower from  './components/CursorFollower'
@@ -9,12 +8,11 @@ import Contact from './components/Contact';
 import Skills from './components/Skills'
 import SocialLinks from './components/SocialLinks'
 
-// Main App component to render all sections
 const App = () => {
 
   return (
     <div className="font-sans bg-gray-900 text-white min-h-screen
-                 dark:bg-gray-100 dark:text-gray-900"> {/* Applied theme-dependent background to root div */}
+                 dark:bg-gray-100 dark:text-gray-900"> 
       <CursorFollower />
       <NavBar/>
       <SocialLinks/>

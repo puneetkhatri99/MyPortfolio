@@ -38,10 +38,10 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 fixed top-0 z-50 bg-gray-900 text-white shadow-md dark:bg-gray-200 dark:text-gray-900">
-      {/* Logo */}
+
       <h1 className="text-5xl ml-2">PS</h1>
 
-      {/* Desktop Links */}
+
       <ul className="hidden md:flex items-center">
         {links.map(({ id, link }) => (
           <li
@@ -54,7 +54,7 @@ const NavBar = () => {
           </li>
         ))}
 
-        {/* Theme Toggle */}
+
         <li className="ml-4">
           <button
             onClick={toggleTheme}
@@ -66,7 +66,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      {/* Mobile Menu Icon + Theme Toggle */}
+      
       <div className="flex items-center md:hidden">
         <button
           onClick={toggleTheme}
@@ -84,7 +84,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-gray-300 dark:from-gray-200 dark:to-gray-400 dark:text-gray-800">
           {links.map(({ id, link }) => (

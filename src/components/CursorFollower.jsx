@@ -6,10 +6,10 @@ const CursorFollower = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsDesktop(window.innerWidth > 768); // Example: disable on screens ≤ 768px
+      setIsDesktop(window.innerWidth > 768); 
     };
 
-    checkScreenSize(); // initial check
+    checkScreenSize(); 
     window.addEventListener("resize", checkScreenSize);
 
     return () => window.removeEventListener("resize", checkScreenSize);
