@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Skills from './components/Skills'
 import SocialLinks from './components/SocialLinks'
 
+
 const App = () => {
 
   return (

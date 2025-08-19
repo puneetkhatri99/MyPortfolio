@@ -1,6 +1,7 @@
  import school from "../assets/school.png"
  import webgen from "../assets/webgen.jpeg"
  import chat from "../assets/chat.jpeg"
+ import extension from "../assets/extension.png"
 const Portfolio = () => {
   const portfolios = [
     {
@@ -20,6 +21,12 @@ const Portfolio = () => {
       src: school,
       demo: "https://shadmanenglishmediumschool.com/",
       // code: "https://github.com/puneetkhatri99/CHATAPP"
+    },
+    {
+      id: 4,
+      src: extension,
+      demo: "https://chromewebstore.google.com/detail/prompt-enhancer/heaoakpoopckdafonkbeifkkofhhjaob",
+      code: "https://github.com/puneetkhatri99/AI-Prompt-Enhancer"
     },
   ];
 
