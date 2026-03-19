@@ -4,7 +4,7 @@ This is my personal portfolio website built to showcase my skills, projects, exp
 
 ## 🌐 Live Demo
 
-[View Portfolio](https://puneetsehgal.netlify.app)
+[View Portfolio](https://puneetsehgal.dev)
 
 ---
 
