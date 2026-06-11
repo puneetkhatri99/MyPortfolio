@@ -13,14 +13,14 @@ function App() {
     <div className="min-h-screen bg-bg text-ink">
       <NavBar />
       <main>
-      <Hero />
-      <Experience />
-      <Stack />
-      <Work />
-      <Ventures />
-      <Process />
-      <About />
-      <Contact />
+        <Hero />
+        <Experience />
+        <Stack />
+        <Work />
+        <Ventures />
+        <Process />
+        <About />
+        <Contact />
       </main>
     </div>
   );
