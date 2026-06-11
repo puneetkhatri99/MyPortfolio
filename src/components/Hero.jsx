@@ -13,9 +13,9 @@ function Hero() {
           loading="eager"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-[rgba(12,16,18,0.28)]" />
-        <div className="absolute inset-x-0 bottom-0 h-[48%] bg-[rgba(8,10,12,0.82)]" />
-        <div className="absolute inset-x-0 bottom-[42%] h-24 bg-[rgba(8,10,12,0.28)] blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,16,18,0.12)_0%,rgba(12,16,18,0.10)_58%,rgba(12,16,18,0.24)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-[26%] bg-[rgba(8,10,12,0.42)]" />
+        <div className="absolute inset-x-0 bottom-[24%] h-20 bg-[rgba(8,10,12,0.18)] blur-2xl" />
 
         <div className="relative z-10 flex min-h-[92svh] flex-col items-center justify-center px-5 py-8 text-center sm:px-8 lg:px-10">
           <div className="flex w-full max-w-5xl flex-col items-center">
