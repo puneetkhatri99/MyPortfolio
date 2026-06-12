@@ -18,7 +18,7 @@ function NavBar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-bg">
+    <header data-site-header className="sticky top-0 z-50 border-b border-border bg-bg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <button
           type="button"
@@ -67,7 +67,7 @@ function NavBar() {
               className="rounded-2xl border border-border bg-[#edf4fa] px-4 py-4 font-display text-lg text-ink transition hover:text-electric"
               onClick={() => {
                 setIsOpen(false);
-                scrollToSection(item.targetId);
+                window.setTimeout(() => scrollToSection(item.targetId), 0);
               }}
             >
               {item.label}

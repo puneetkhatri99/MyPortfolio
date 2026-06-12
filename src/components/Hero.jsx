@@ -4,8 +4,8 @@ import { scrollToSection } from "../utils/scrollToSection";
 
 function Hero() {
   return (
-    <RevealSection id="home" className="px-4 pb-10 pt-10 sm:px-6 lg:px-8 ">
-      <div className="relative mx-auto min-h-[92svh] max-w-7xl overflow-hidden rounded-[36px] border border-[#708391] bg-offblack shadow-[0_20px_50px_rgba(48,54,58,0.12)]">
+    <RevealSection id="home" className="px-4 pb-10 pt-0 sm:px-6 lg:px-8">
+      <div className="relative mx-auto min-h-[calc(100svh_-_var(--nav-height))] max-w-7xl overflow-hidden rounded-[36px] border border-[#708391] bg-offblack shadow-[0_20px_50px_rgba(48,54,58,0.12)]">
         <img
           src={heroImage}
           alt="Puneet Sehgal sitting with a laptop by a train window"
@@ -17,7 +17,7 @@ function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-[26%] bg-[rgba(8,10,12,0.42)]" />
         <div className="absolute inset-x-0 bottom-[24%] h-20 bg-[rgba(8,10,12,0.18)] blur-2xl" />
 
-        <div className="relative z-10 flex min-h-[92svh] flex-col items-center justify-center px-5 py-8 text-center sm:px-8 lg:px-10">
+        <div className="relative z-10 flex min-h-[calc(100svh_-_var(--nav-height))] flex-col items-center justify-center px-5 py-8 text-center sm:px-8 lg:px-10">
           <div className="flex w-full max-w-5xl flex-col items-center">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.5em] text-white/70 sm:text-xs">
               Software Developer · Backend Engineer · AI Builder

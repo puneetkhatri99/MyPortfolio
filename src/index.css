@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --nav-height: 73px;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: "Fredoka", ui-rounded, system-ui, sans-serif;

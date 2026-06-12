@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 function About() {
   return (
     <RevealSection id="about" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start mt-15">
         <div className="space-y-6">
           <SectionHeader
             eyebrow="About"

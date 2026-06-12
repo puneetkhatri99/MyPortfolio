@@ -14,6 +14,14 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}${window.location.search}`
+      );
+    }
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -30,7 +38,7 @@ function App() {
   return (
     <div className="min-h-screen bg-bg text-ink">
       <NavBar />
-      <main className="pt-8 sm:pt-10 lg:pt-12">
+      <main >
         <Hero />
         <About />
         <Experience />
