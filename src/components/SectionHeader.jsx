@@ -4,7 +4,7 @@ function SectionHeader({ eyebrow, title, description, className = "" }) {
       {eyebrow ? (
         <p className="font-mono text-sm text-muted">{eyebrow}</p>
       ) : null}
-      <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl lg:text-5xl">
+      <h2 className="mt-2 max-w-4xl font-display text-[clamp(2.75rem,6vw,5.5rem)] leading-[0.92] tracking-tight text-ink">
         {title}
       </h2>
       {description ? (

@@ -16,7 +16,7 @@ function About() {
             {aboutWords.map((word) => (
               <p
                 key={word}
-                className="font-display text-5xl leading-none text-ink sm:text-6xl lg:text-7xl"
+                className="font-display text-[clamp(3rem,7vw,5.5rem)] leading-[0.92] tracking-tight text-ink"
               >
                 {word}
               </p>

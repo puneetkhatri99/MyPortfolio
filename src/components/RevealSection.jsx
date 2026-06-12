@@ -11,14 +11,15 @@ function RevealSection({
 
   return (
     <Tag
-      id={id}
       ref={ref}
       className={`scroll-mt-28 ${className} motion-safe:transition motion-safe:duration-700 motion-safe:ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      {children}
+      <div id={id} className="scroll-mt-20">
+        {children}
+      </div>
     </Tag>
   );
 }

@@ -17,7 +17,7 @@ function Contact() {
 
         <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[28px] border border-border bg-[#edf4fa] p-6 shadow-[0_10px_30px_rgba(48,54,58,0.05)] sm:p-8">
-            <p className="max-w-2xl font-display text-4xl leading-tight text-ink sm:text-5xl lg:text-6xl">
+            <p className="max-w-2xl font-display text-[clamp(2.5rem,5vw,4.75rem)] leading-[0.95] tracking-tight text-ink">
               Available for product builds, backend systems, and AI workflows.
             </p>
             <p className="mt-5 max-w-2xl font-mono text-sm leading-7 text-muted sm:text-base">
@@ -39,7 +39,9 @@ function Contact() {
           </div>
 
           <div className="rounded-[28px] border border-border bg-[#edf4fa] p-6 shadow-[0_10px_30px_rgba(48,54,58,0.05)] sm:p-8">
-            <p className="font-display text-2xl text-ink">Direct links</p>
+            <p className="font-display text-3xl leading-[0.95] tracking-tight text-ink">
+              Direct links
+            </p>
             <div className="mt-6 space-y-4">
               <div className="rounded-2xl border border-border bg-[#dfe9f3] p-4">
                 <p className="font-mono text-xs text-muted">Email</p>

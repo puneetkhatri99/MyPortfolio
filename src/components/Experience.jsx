@@ -8,7 +8,7 @@ function Experience() {
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionHeader
           eyebrow="Experience"
-          title="Timeline"
+          title="Where I've Worked"
           description="A compact view of how the work has evolved across backend, full-stack, and AI/product delivery."
         />
 
@@ -26,7 +26,9 @@ function Experience() {
                 </div>
                 <div className="space-y-3">
                   <div>
-                    <h3 className="font-display text-2xl text-ink">{entry.title}</h3>
+                    <h3 className="font-display text-3xl leading-[0.95] tracking-tight text-ink">
+                      {entry.title}
+                    </h3>
                     <p className="mt-1 font-mono text-sm text-muted">
                       {entry.company}
                     </p>

@@ -16,12 +16,10 @@ function WorkMedia({ project }) {
   }
 
   return (
-    <div className="flex h-56 items-end overflow-hidden bg-[#dfe9f3] p-5">
-      <div className="max-w-sm space-y-3">
-        <p className="font-mono text-sm text-muted">Draft system</p>
-        <p className="font-display text-3xl text-ink">{project.title}</p>
-        <p className="font-mono text-sm leading-7 text-muted">
-          API routing, context handling, and response history in one panel.
+    <div className="flex h-28 items-end overflow-hidden bg-[#dfe9f3] p-5 relative">
+      <div className="max-w-sm space-y-3 ">
+        <p className="font-display text-3xl leading-[0.95] tracking-tight text-ink">
+          {project.title}
         </p>
       </div>
     </div>
@@ -30,12 +28,12 @@ function WorkMedia({ project }) {
 
 function Work() {
   return (
-    <RevealSection id="work" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <RevealSection id="work" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-2">
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionHeader
-          eyebrow="Work"
-          title="Selected Projects"
-          description="A tighter presentation of shipped work and one drafted AI/backend system to match the intended direction of the portfolio."
+          eyebrow="Featured Work"
+          title="What I've Built"
+          description="A tighter presentation of shipped work."
         />
 
         <div className="grid gap-5 lg:grid-cols-3">
@@ -47,7 +45,6 @@ function Work() {
               <WorkMedia project={project} />
               <div className="space-y-4 p-6">
                 <p className="font-mono text-sm text-muted">{project.category}</p>
-                <h3 className="font-display text-2xl text-ink">{project.title}</h3>
                 <p className="font-mono text-sm leading-7 text-muted sm:text-base">
                   {project.description}
                 </p>

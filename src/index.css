@@ -7,10 +7,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-  }
-
-  html {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Fredoka", ui-rounded, system-ui, sans-serif;
   }
 
   body {

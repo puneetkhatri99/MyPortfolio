@@ -19,7 +19,9 @@ function Process() {
               className="rounded-[28px] border border-border bg-[#edf4fa] p-6 shadow-[0_10px_30px_rgba(48,54,58,0.05)] transition duration-200 ease-out hover:-translate-y-0.5"
             >
               <p className="font-display text-4xl text-electric">{item.step}</p>
-              <h3 className="mt-5 font-display text-2xl text-ink">{item.title}</h3>
+              <h3 className="mt-5 font-display text-3xl leading-[0.95] tracking-tight text-ink">
+                {item.title}
+              </h3>
               <p className="mt-3 font-mono text-sm leading-7 text-muted sm:text-base">
                 {item.description}
               </p>

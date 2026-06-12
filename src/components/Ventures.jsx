@@ -10,7 +10,7 @@ function Ventures() {
         <SectionHeader
           eyebrow="Ventures"
           title="Pet Projects"
-          description="Draft product ideas and experiments that sit close to the way I like to build: small surfaces, clear purpose, and practical utility."
+          description="Products I built, launched, and own. Hobby projects."
         />
 
         <div className="grid gap-5 lg:grid-cols-2">
@@ -19,7 +19,7 @@ function Ventures() {
               key={venture.title}
               className="overflow-hidden rounded-[28px] border border-border bg-[#edf4fa] shadow-[0_10px_30px_rgba(48,54,58,0.05)] transition duration-200 ease-out hover:-translate-y-1"
             >
-              <div className="relative aspect-[4/3] overflow-hidden border-b border-border">
+              <div className="relative aspect-[3/2] overflow-hidden border-b border-border">
                 <img
                   src={venture.image}
                   alt={venture.title}
@@ -29,15 +29,14 @@ function Ventures() {
                 />
                 <div className="absolute inset-0 bg-offblack/10" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <p className="max-w-md rounded-full border border-border bg-[#edf4fa] px-4 py-2 font-mono text-xs text-ink">
-                    External link available
-                  </p>
                 </div>
               </div>
 
               <div className="space-y-4 p-6">
                 <div>
-                  <h3 className="font-display text-2xl text-ink">{venture.title}</h3>
+                  <h3 className="font-display text-3xl leading-[0.95] tracking-tight text-ink">
+                    {venture.title}
+                  </h3>
                   <p className="mt-2 max-w-2xl font-mono text-sm leading-7 text-muted sm:text-base">
                     {venture.tagline}
                   </p>

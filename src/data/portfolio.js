@@ -1,6 +1,4 @@
 import heroImage from "../assets/hero.png";
-import todoImage from "../assets/todo.jpg";
-import currencyImage from "../assets/currency.jpg";
 
 export const navItems = [
   { label: "Experience", href: "#experience" },
@@ -20,40 +18,31 @@ export const contactLinks = {
 };
 
 export const heroStats = [
-  { value: "2+", label: "Years Experience" },
-  { value: "12+", label: "Projects Shipped" },
+  { value: "1+", label: "Years Experience" },
+  { value: "5+", label: "Projects Shipped" },
   { value: "15+", label: "Technologies Used" },
   { value: "8+", label: "Systems Built" },
 ];
 
 export const experienceEntries = [
   {
-    date: "2024 - Present",
-    title: "Backend & AI Engineer",
-    company: "Independent / Client Builds",
-    location: "Remote",
+    date: "MAR 2026 - Present",
+    title: "Software Engineer",
+    company: "LOAM IT Solutions",
+    location: "Noida, India",
     description:
       "Building API-first tools, AI-assisted workflows, and small systems that need to stay reliable after launch.",
     badge: "Current",
   },
   {
-    date: "2023 - 2024",
-    title: "Full-Stack Developer",
+    date: "JUN 2025 -  AUG 2025",
+    title: "Software Engineer Intern",
     company: "Product Experiments",
     location: "India / Remote",
     description:
       "Turned ideas into polished web apps by connecting interfaces, data layers, and lightweight deployment flows.",
-    badge: "Shipped",
-  },
-  {
-    date: "2022 - 2023",
-    title: "Web Engineer",
-    company: "Freelance / Personal Projects",
-    location: "India",
-    description:
-      "Focused on responsive UI delivery, backend fundamentals, and the transition from prototypes to maintainable apps.",
-    badge: "Project",
-  },
+    badge: "Completed",
+  }
 ];
 
 export const stackLayers = [
@@ -61,8 +50,10 @@ export const stackLayers = [
     layer: "Layer 01",
     title: "Backend & APIs",
     skills: [
+      "FastAPI",
+      "Django",
       "Node.js",
-      "Express",
+      "Express.js",
       "REST APIs",
       "Authentication",
       "PostgreSQL",
@@ -73,102 +64,167 @@ export const stackLayers = [
   },
   {
     layer: "Layer 02",
-    title: "AI & Data",
+    title: "AI & Automation",
     skills: [
-      "LLM workflows",
-      "Prompt design",
-      "Retrieval pipelines",
-      "Context shaping",
+      "LangChain",
+      "LangGraph",
+      "LLM Workflows",
+      "Prompt Design",
+      "Retrieval Pipelines",
+      "Context Engineering",
       "Automation",
-      "Evaluation loops",
+      "Evaluation Loops",
     ],
   },
   {
     layer: "Layer 03",
-    title: "Cloud & DevOps",
-    skills: [
-      "Bash",
-      "Linux",
-      "Docker",
-      "Deployment",
-      "CI/CD",
-      "Logging",
-      "Monitoring",
-    ],
-  },
-  {
-    layer: "Layer 04",
     title: "Frontend & Product",
     skills: [
       "React",
       "Next.js",
       "Tailwind CSS",
+      "Component Systems",
+      "Responsive UI",
       "Accessibility",
-      "Component systems",
-      "Product thinking",
+      "UI/UX Design",
+      "Product Thinking",
     ],
   },
+  {
+    layer: "Layer 04",
+    title: "Cloud & DevOps",
+    skills: [
+      "Linux",
+      "Bash",
+      "Docker",
+      "Deployment",
+      "Logging",
+      "Monitoring",
+    ],
+  }
 ];
 
 export const workProjects = [
   {
-    category: "Productivity / CRUD",
-    title: "TaskFlow OS",
+    category: "Research Intelligence / AI",
+    title: "Limbus",
     description:
-      "A mobile-first task manager with a clear edit flow, quick state changes, and a layout that stays calm under repeated use.",
-    tech: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
-    outcome: "Reduced recurring task setup to a few taps and kept edits immediate.",
-    image: todoImage,
-  },
-  {
-    category: "Fintech / Data",
-    title: "Currency Lens",
-    description:
-      "A conversion dashboard for checking rates, comparing values, and moving through the workflow without visual noise.",
-    tech: ["React", "API Integration", "JavaScript", "Responsive CSS"],
-    outcome: "Turned lookup-heavy exchange checks into a clean two-step flow.",
-    image: currencyImage,
-  },
-  {
-    category: "AI / Backend",
-    title: "Signal Relay",
-    description:
-      "A draft assistant pipeline for routing prompts, persisting context, and keeping request history attached to each response.",
-    tech: ["Node.js", "Express", "PostgreSQL", "LLM APIs"],
-    outcome: "Removed repeated handoffs and kept context tied to each request.",
+      "A research intelligence platform that connects medical, patent, FDA, PubMed, clinical trial, and scientific records into one searchable system for company-level research.",
+    tech: [
+      "React",
+      "Django",
+      "MongoDB",
+      "ETL",
+      "AI Embeddings",
+      "Semantic Search",
+    ],
+    outcome:
+      "Enabled researchers to search companies, explore linked records, download CSVs, save searches, and use AI-assisted company profiling across messy public datasets.",
     image: null,
   },
+  {
+    category: "Weather / AI Forecasting",
+    title: "Nagaland Weather Forecasting System",
+    description:
+      "An official weather forecasting system for Nagaland that uses GraphCast models and HRES weather data to generate weather predictions for up to 14 days.",
+    tech: [
+      "GraphCast",
+      "HRES Data",
+      "Python",
+      "Weather Forecasting",
+      "Data Pipelines",
+      "Visualization",
+    ],
+    outcome:
+      "Supported medium-range weather forecasting by combining model-driven predictions with structured weather data pipelines.",
+    image: null,
+  },
+  {
+    category: "AI / ETL",
+    title: "Resume ETL Pipeline",
+    description:
+      "An AI-powered resume processing pipeline that accepts resumes in different formats and languages, extracts structured candidate data, and stores it for admin review.",
+    tech: [
+      "AI Extraction",
+      "ETL",
+      "Resume Parsing",
+      "ATS Scoring",
+      "Skill Matching",
+      "Admin Dashboard",
+    ],
+    outcome:
+      "Helped admins download candidate data, check ATS scores, and sort resumes by skill relevance.",
+    image: null,
+  }
 ];
 
 export const ventureProjects = [
   {
-    title: "Blueprint Notes",
+    title: "Herbs Business Website",
     tagline:
-      "A private capture space for ideas, prompts, snippets, and implementation notes before they scatter.",
+      "A production-grade React website for a family ayurvedic herbs business, built to showcase products, collect inquiries, and manage customer orders without a full e-commerce flow.",
     bullets: [
-      "Fast note capture",
-      "Reusable templates",
-      "Searchable by project",
+      "Searchable catalog of 100+ herbal products",
+      "Customer inquiries through email and WhatsApp",
+      "Feedback collection and article publishing",
+      "Private dashboard for order tracking",
     ],
-    tags: ["React", "Node.js", "Local-first"],
-    image: "/john-mcarthur-ROQzKIAdY78-unsplash.jpg",
-    href: "https://github.com/puneetkhatri99",
-    linkLabel: "GitHub",
+    tags: [
+      "React",
+      "Product Catalog",
+      "Search",
+      "Admin Dashboard",
+      "Order Tracking",
+    ],
+    image: "herbs.png",
+    href: "https://shreeramherbs.netlify.app/",
+    linkLabel: "Live Demo",
   },
   {
-    title: "Ops Radar",
-    tagline:
-      "A lightweight view for deploy status, log spikes, and the small moments that matter during release day.",
-    bullets: [
-      "Status timeline",
-      "Quick incident notes",
-      "Deploy snapshots",
-    ],
-    tags: ["Bash", "PostgreSQL", "API-driven"],
-    image: "/thomas-bormans-pcpsVsyFp_s-unsplash.jpg",
-    href: "http://www.linkedin.com/in/puneetsehgal0205",
-    linkLabel: "LinkedIn",
-  },
+  title: "Real-Time Chat App",
+  tagline:
+    "A full-stack real-time messaging platform with private chats, group conversations, typing indicators, notifications, and admin controls.",
+  bullets: [
+    "Built private and group messaging with real-time updates",
+    "Added typing indicators and notification flows using Socket.IO",
+    "Designed an admin panel for chat and user management",
+    "Managed global app state with Redux Toolkit",
+  ],
+  tags: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Redux Toolkit",
+    "Socket.IO",
+    "MUI",
+  ],
+  image: "chat.png",
+  href: "https://connected-one.vercel.app/",
+  linkLabel: "Live Demo",
+},
+{
+  title: "Prompt Enhancer",
+  tagline:
+    "A Chrome Extension that improves ChatGPT prompts using OpenAI APIs to generate clearer, more structured, and context-rich instructions.",
+  bullets: [
+    "Built a Manifest V3 Chrome Extension for prompt enhancement",
+    "Used OpenAI APIs to rewrite prompts with better clarity and context",
+    "Implemented browser-side workflows with content scripts",
+    "Injected optimized prompt responses into the active page in real time",
+  ],
+  tags: [
+    "Chrome Extension",
+    "Manifest V3",
+    "JavaScript",
+    "OpenAI API",
+    "Content Scripts",
+    "Browser APIs",
+  ],
+  image: "prompt.png",
+  href: "https://chromewebstore.google.com/detail/prompt-enhancer/heaoakpoopckdafonkbeifkkofhhjaob?utm_source=item-share-cb",
+  linkLabel: "Live Demo",
+},
 ];
 
 export const processSteps = [
