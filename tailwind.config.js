@@ -3,7 +3,7 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      display: ["Fredoka", "ui-rounded", "system-ui", "sans-serif"],
+      display: ["DynaPuff", "ui-rounded", "system-ui", "sans-serif"],
       mono: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "monospace"],
     },
     extend: {

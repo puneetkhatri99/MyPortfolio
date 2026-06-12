@@ -3,6 +3,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 function RevealSection({
   id,
   className = "",
+  contentClassName = "md:pt-16",
   delay = 0,
   children,
   as: Tag = "section",
@@ -17,7 +18,7 @@ function RevealSection({
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div id={id} className="w-full md:pt-16">
+      <div id={id} className={`w-full ${contentClassName}`}>
         {children}
       </div>
     </Tag>

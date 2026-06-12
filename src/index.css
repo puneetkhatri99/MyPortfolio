@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,12 +6,18 @@
 
 @layer base {
   :root {
-    --nav-height: 73px;
+    --nav-height: 85px;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --nav-height: 73px;
+    }
   }
 
   html {
     scroll-behavior: smooth;
-    font-family: "Fredoka", ui-rounded, system-ui, sans-serif;
+    font-family: "DynaPuff", ui-rounded, system-ui, sans-serif;
   }
 
   body {

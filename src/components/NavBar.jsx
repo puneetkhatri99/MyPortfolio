@@ -18,22 +18,22 @@ function NavBar() {
   }, []);
 
   return (
-    <header data-site-header className="sticky top-0 z-50 border-b border-border bg-bg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <header data-site-header className="sticky top-0 z-50 border-b border-[#c7d2d9] bg-[#e6edf2]/95 backdrop-blur">
+      <div className="mx-auto grid max-w-none grid-cols-[1fr_auto_1fr] items-center px-5 py-5 sm:px-8 lg:px-12">
         <button
           type="button"
-          className="font-display text-2xl text-ink transition hover:text-electric"
+          className="justify-self-start font-display text-xl text-offblack transition hover:text-electric sm:text-2xl"
           onClick={() => scrollToSection("home")}
         >
           PS.
         </button>
 
-        <nav className="hidden items-center gap-2 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {navItems.map((item) => (
             <button
               key={item.label}
               type="button"
-              className="rounded-full px-3 py-2 font-display text-base text-ink transition hover:text-electric"
+              className="font-display text-base text-muted transition hover:text-offblack lg:text-lg"
               onClick={() => scrollToSection(item.targetId)}
             >
               {item.label}
@@ -43,10 +43,18 @@ function NavBar() {
 
         <button
           type="button"
+          className="hidden justify-self-end bg-offblack px-6 py-4 font-mono text-sm font-bold tracking-[0.18em] text-white transition hover:bg-electric hover:text-offblack md:inline-flex"
+          onClick={() => scrollToSection("contact")}
+        >
+          Let&apos;s Build →
+        </button>
+
+        <button
+          type="button"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
           aria-controls="mobile-navigation"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-[#edf4fa] text-ink transition hover:text-electric focus:outline-none focus-visible:ring-2 focus-visible:ring-electric focus-visible:ring-offset-2 focus-visible:ring-offset-bg md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center justify-self-end border border-border bg-[#edf4fa] text-ink transition hover:text-electric focus:outline-none focus-visible:ring-2 focus-visible:ring-electric focus-visible:ring-offset-2 focus-visible:ring-offset-bg md:hidden"
           onClick={() => setIsOpen((value) => !value)}
         >
           {isOpen ? <HiOutlineX size={22} /> : <HiOutlineMenuAlt3 size={22} />}
@@ -55,7 +63,7 @@ function NavBar() {
 
       <div
         id="mobile-navigation"
-        className={`border-t border-border bg-bg md:hidden ${
+        className={`border-t border-border bg-[#e6edf2] md:hidden ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -64,7 +72,7 @@ function NavBar() {
             <button
               key={item.label}
               type="button"
-              className="rounded-2xl border border-border bg-[#edf4fa] px-4 py-4 font-display text-lg text-ink transition hover:text-electric"
+              className="border border-border bg-[#edf4fa] px-4 py-4 font-display text-lg text-ink transition hover:text-electric"
               onClick={() => {
                 setIsOpen(false);
                 window.setTimeout(() => scrollToSection(item.targetId), 0);
@@ -73,6 +81,16 @@ function NavBar() {
               {item.label}
             </button>
           ))}
+          <button
+            type="button"
+            className="bg-offblack px-4 py-4 font-mono text-sm font-bold tracking-[0.18em] text-white"
+            onClick={() => {
+              setIsOpen(false);
+              window.setTimeout(() => scrollToSection("contact"), 0);
+            }}
+          >
+            Let&apos;s Build →
+          </button>
         </nav>
       </div>
     </header>
