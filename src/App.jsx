@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="min-h-screen bg-bg text-ink">
       <NavBar />
-      <main className="pt-4 sm:pt-6">
+      <main className="pt-8 sm:pt-10 lg:pt-12">
         <Hero />
         <About />
         <Experience />

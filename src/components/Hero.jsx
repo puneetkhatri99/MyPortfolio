@@ -4,7 +4,7 @@ import { scrollToSection } from "../utils/scrollToSection";
 
 function Hero() {
   return (
-    <RevealSection id="home" className="px-4 pb-10 pt-10 sm:px-6 lg:px-8">
+    <RevealSection id="home" className="px-4 pb-10 pt-10 sm:px-6 lg:px-8 ">
       <div className="relative mx-auto min-h-[92svh] max-w-7xl overflow-hidden rounded-[36px] border border-[#708391] bg-offblack shadow-[0_20px_50px_rgba(48,54,58,0.12)]">
         <img
           src={heroImage}
