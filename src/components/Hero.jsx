@@ -1,6 +1,6 @@
 import { heroImage, heroStats } from "../data/portfolio";
-import ButtonLink from "./ButtonLink";
 import RevealSection from "./RevealSection";
+import { scrollToSection } from "../utils/scrollToSection";
 
 function Hero() {
   return (
@@ -33,19 +33,20 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink
-                href="#work"
-                className="border-white bg-white text-offblack hover:opacity-95"
+              <button
+                type="button"
+                onClick={() => scrollToSection("work")}
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white px-5 py-3 font-mono text-sm text-offblack transition duration-200 ease-out hover:-translate-y-0.5 hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-electric focus-visible:ring-offset-2 focus-visible:ring-offset-offblack"
               >
                 See My Work
-              </ButtonLink>
-              <ButtonLink
-                href="#contact"
-                variant="secondary"
-                className="border-white/40 bg-transparent text-white hover:bg-white/10"
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-transparent px-5 py-3 font-mono text-sm text-white transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-electric focus-visible:ring-offset-2 focus-visible:ring-offset-offblack"
               >
                 Get in Touch
-              </ButtonLink>
+              </button>
             </div>
           </div>
 

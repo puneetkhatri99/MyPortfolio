@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
@@ -8,25 +8,39 @@ import Ventures from "./components/Ventures";
 import Process from "./components/Process";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Loader from "./components/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.style.overflow = isLoading ? "hidden" : "";
+    document.body.style.overflow = isLoading ? "hidden" : "";
+
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, [isLoading]);
+
   return (
     <div className="min-h-screen bg-bg text-ink">
       <NavBar />
-      <main>
+      <main className="pt-4 sm:pt-6">
         <Hero />
+        <About />
         <Experience />
         <Stack />
         <Work />
         <Ventures />
         <Process />
-        <About />
         <Contact />
       </main>
+      {isLoading ? <Loader onComplete={() => setIsLoading(false)} /> : null}
     </div>
   );
 }

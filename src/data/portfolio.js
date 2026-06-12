@@ -1,13 +1,13 @@
 import heroImage from "../assets/hero.png";
 
 export const navItems = [
-  { label: "Experience", href: "#experience" },
-  { label: "Stack", href: "#stack" },
-  { label: "Work", href: "#work" },
-  { label: "Ventures", href: "#ventures" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", targetId: "about" },
+  { label: "Experience", targetId: "experience" },
+  { label: "Stack", targetId: "stack" },
+  { label: "Work", targetId: "work" },
+  { label: "Ventures", targetId: "ventures" },
+  { label: "Process", targetId: "process" },
+  { label: "Contact", targetId: "contact" },
 ];
 
 export const contactLinks = {
@@ -161,8 +161,11 @@ export const workProjects = [
 export const ventureProjects = [
   {
     title: "Herbs Business Website",
-    tagline:
-      "A production-grade React website for a family ayurvedic herbs business, built to showcase products, collect inquiries, and manage customer orders without a full e-commerce flow.",
+    category: "React · Product Site · Pet Project",
+    logoText: "HB",
+    summary: "Built for a family ayurvedic herbs business.",
+    body:
+      "A production-grade React website built to showcase products, collect inquiries, and manage customer orders without a full e-commerce flow.",
     bullets: [
       "Searchable catalog of 100+ herbal products",
       "Customer inquiries through email and WhatsApp",
@@ -181,50 +184,56 @@ export const ventureProjects = [
     linkLabel: "Live Demo",
   },
   {
-  title: "Real-Time Chat App",
-  tagline:
-    "A full-stack real-time messaging platform with private chats, group conversations, typing indicators, notifications, and admin controls.",
-  bullets: [
-    "Built private and group messaging with real-time updates",
-    "Added typing indicators and notification flows using Socket.IO",
-    "Designed an admin panel for chat and user management",
-    "Managed global app state with Redux Toolkit",
-  ],
-  tags: [
-    "React",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Redux Toolkit",
-    "Socket.IO",
-    "MUI",
-  ],
-  image: "chat.png",
-  href: "https://connected-one.vercel.app/",
-  linkLabel: "Live Demo",
-},
-{
-  title: "Prompt Enhancer",
-  tagline:
-    "A Chrome Extension that improves ChatGPT prompts using OpenAI APIs to generate clearer, more structured, and context-rich instructions.",
-  bullets: [
-    "Built a Manifest V3 Chrome Extension for prompt enhancement",
-    "Used OpenAI APIs to rewrite prompts with better clarity and context",
-    "Implemented browser-side workflows with content scripts",
-    "Injected optimized prompt responses into the active page in real time",
-  ],
-  tags: [
-    "Chrome Extension",
-    "Manifest V3",
-    "JavaScript",
-    "OpenAI API",
-    "Content Scripts",
-    "Browser APIs",
-  ],
-  image: "prompt.png",
-  href: "https://chromewebstore.google.com/detail/prompt-enhancer/heaoakpoopckdafonkbeifkkofhhjaob?utm_source=item-share-cb",
-  linkLabel: "Live Demo",
-},
+    title: "Real-Time Chat App",
+    category: "AI · Messaging · Pet Project",
+    logoText: "CC",
+    summary: "A live messaging app with private and group chat.",
+    body:
+      "A full-stack real-time messaging platform with private chats, group conversations, typing indicators, notifications, and admin controls.",
+    bullets: [
+      "Built private and group messaging with real-time updates",
+      "Added typing indicators and notification flows using Socket.IO",
+      "Designed an admin panel for chat and user management",
+      "Managed global app state with Redux Toolkit",
+    ],
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux Toolkit",
+      "Socket.IO",
+      "MUI",
+    ],
+    image: "chat.png",
+    href: "https://connected-one.vercel.app/",
+    linkLabel: "Live Demo",
+  },
+  {
+    title: "Prompt Enhancer",
+    category: "Chrome Extension · AI Tool · Pet Project",
+    logoText: "PE",
+    summary: "A browser-side prompt rewriting extension.",
+    body:
+      "A Chrome Extension that improves ChatGPT prompts using OpenAI APIs to generate clearer, more structured, and context-rich instructions.",
+    bullets: [
+      "Built a Manifest V3 Chrome Extension for prompt enhancement",
+      "Used OpenAI APIs to rewrite prompts with better clarity and context",
+      "Implemented browser-side workflows with content scripts",
+      "Injected optimized prompt responses into the active page in real time",
+    ],
+    tags: [
+      "Chrome Extension",
+      "Manifest V3",
+      "JavaScript",
+      "OpenAI API",
+      "Content Scripts",
+      "Browser APIs",
+    ],
+    image: "prompt.png",
+    href: "https://chromewebstore.google.com/detail/prompt-enhancer/heaoakpoopckdafonkbeifkkofhhjaob?utm_source=item-share-cb",
+    linkLabel: "Live Demo",
+  },
 ];
 
 export const processSteps = [
@@ -261,5 +270,11 @@ export const processSteps = [
 ];
 
 export const aboutWords = ["Builder.", "Engineer.", "Problem Solver."];
+
+export const portfolioImageSources = [
+  heroImage,
+  ...workProjects.flatMap((project) => (project.image ? [project.image] : [])),
+  ...ventureProjects.flatMap((venture) => (venture.image ? [venture.image] : [])),
+];
 
 export { heroImage };

@@ -8,8 +8,8 @@ function Ventures() {
     <RevealSection id="ventures" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionHeader
-          eyebrow="Ventures"
-          title="Pet Projects"
+          eyebrow="Shipped"
+          title="Personal Ventures"
           description="Products I built, launched, and own. Hobby projects."
         />
 
@@ -17,63 +17,69 @@ function Ventures() {
           {ventureProjects.map((venture) => (
             <article
               key={venture.title}
-              className="overflow-hidden rounded-[28px] border border-border bg-[#edf4fa] shadow-[0_10px_30px_rgba(48,54,58,0.05)] transition duration-200 ease-out hover:-translate-y-1"
+              className="overflow-hidden rounded-[6px] border border-[#e8e8e8] bg-white shadow-[0_18px_40px_rgba(48,54,58,0.05)] transition duration-200 ease-out hover:-translate-y-1"
             >
-              <div className="relative aspect-[3/2] overflow-hidden border-b border-border">
-                <img
-                  src={venture.image}
-                  alt={venture.title}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="absolute inset-0 bg-offblack/10" />
-                <div className="absolute bottom-4 left-4 right-4">
-                </div>
-              </div>
-
-              <div className="space-y-4 p-6">
-                <div>
-                  <h3 className="font-display text-3xl leading-[0.95] tracking-tight text-ink">
-                    {venture.title}
-                  </h3>
-                  <p className="mt-2 max-w-2xl font-mono text-sm leading-7 text-muted sm:text-base">
-                    {venture.tagline}
-                  </p>
+              <div className="flex min-h-full flex-col p-6 sm:p-8">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#dfe3e8] bg-[#f3f5f7] font-display text-lg tracking-tight text-ink">
+                      {venture.logoText}
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-mono text-[0.72rem] uppercase tracking-[0.32em] text-electric">
+                        {venture.category}
+                      </p>
+                      <p className="font-display text-xl leading-none text-ink sm:text-2xl">
+                        {venture.title}
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <ul className="space-y-3">
+                <p className="mt-6 max-w-3xl font-display text-2xl leading-tight text-muted sm:text-[2rem]">
+                  {venture.summary}
+                </p>
+
+                <p className="mt-4 max-w-3xl font-mono text-sm leading-7 text-muted sm:text-base">
+                  {venture.body}
+                </p>
+
+                <ul className="mt-8 space-y-3">
                   {venture.bullets.map((bullet) => (
                     <li
                       key={bullet}
                       className="flex items-start gap-3 font-mono text-sm text-muted sm:text-base"
                     >
-                      <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-electric" />
+                      <span className="mt-0.5 shrink-0 text-electric">→</span>
                       <span>{bullet}</span>
                     </li>
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap gap-2">
-                  {venture.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-border bg-[#dfe9f3] px-3 py-1 font-mono text-xs text-ink"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                <div className="mt-auto border-t border-[#ededed] pt-6">
+                  <div className="flex flex-wrap gap-2">
+                    {venture.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-sm border border-[#e3e3e3] bg-[#f5f5f5] px-3 py-1 font-mono text-xs text-muted"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                <a
-                  href={venture.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-electric bg-electric px-5 py-3 font-mono text-sm text-offblack transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#1d78ff]"
-                >
-                  {venture.linkLabel}
-                  <FiArrowUpRight aria-hidden="true" />
-                </a>
+                  <div className="mt-6 flex items-center justify-end">
+                    <a
+                      href={venture.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 font-display text-base tracking-tight text-electric transition hover:text-[#1d78ff]"
+                    >
+                      {venture.linkLabel}
+                      <FiArrowUpRight aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </article>
           ))}
